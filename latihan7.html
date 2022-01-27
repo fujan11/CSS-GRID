@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> min-max </title>
+    <style>
+        html body{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 80%;
+            margin : 50px auto;
+            display: grid;
+            grid-template-columns:  1fr 1fr 1fr;
+            grid-template-areas: 
+            'header header header'
+            'side side side'
+            'content content content'
+            'footer footer footer';
+            
+           
+
+        }
+        .item{
+            background-color: aquamarine;
+            width: 100%;
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .header{
+            grid-area: header;
+            background-color: blueviolet;
+        }
+        .side{
+            grid-area: side;
+            background-color: rgb(92, 43, 226);
+        }
+        .content{
+            grid-area: content;
+            background-color: rgb(243, 239, 247);
+        }
+        .footer{
+            grid-area: footer;
+            background-color: rgb(158, 142, 173);
+        }
+        @media screen and (min-width: 576px) {
+            .container{
+            grid-template-areas: 
+            'header header header'
+            'side content content'
+            'footer footer footer';
+            
+           
+
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">header</div>
+        <div class="item side">side</div>
+        <div class="item content">content</div>
+        <div class="item footer">footer</div>
+        <!-- <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+        <div class="item">item 9</div> -->
+    </div>
+</body>
+</html>

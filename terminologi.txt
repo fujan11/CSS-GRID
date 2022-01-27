@@ -1,0 +1,54 @@
+ * grid container
+    element pembungkus grid
+* grid item
+    element2 yang persis berada 1 level di bawah 
+    grid container
+* gride line
+    garis horizontal (kolom) atau vertikal (baris)
+    yang memisahkan grid menjadi beberapa bagian
+    dan di tandai dengan angka
+* grid cell
+    perpotongan antara baris 
+    dan kolom dalam satu grid
+* grid area
+    kumpulan lebih dari satu grid cell yang
+    membentuk kotak
+*grid track
+    ukuran/ jarak antara 2 gride line, bisa horizontal(kolom)
+    atau vertikal (baris)
+*grid gap
+    jarak/sapasi antar grid track/cell
+
+
+
+    *property2 untuk container
+        grid-template-column
+        grid-template-rows
+        grid-auto-column
+        grid-auto-rows
+        grid-auto-flow
+        grid-template-areas
+        grid-template
+        grid-column-gap
+        grid-rows-gap
+        grid-gap
+        grid
+        justify-items
+        align-item
+        place-item
+        justify-content
+        align-content
+        place-content
+
+    *property2 untuk item
+        grid-column-start
+        grid-column-end
+        grid-row-start
+        grid-row-end
+        grid-column
+        grid-row
+        grid- area
+        justify-self
+        align-self
+        place-self
+        
